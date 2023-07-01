@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,19 +16,19 @@
         <div class="username">
             <h1>Ravish</h1>
         </div>
-        <div class="button">
+        <div class="button" data-target="#about">
             <i class="fa-regular fa-address-card"></i>
             <span class="button_text">About</span>
         </div>
-        <div class="button">
+        <div class="button" data-target="#resume">
             <i class="fa-regular fa-file"></i>
             <span class="button_text">Resume</span>
         </div>
-        <div class="button">
+        <div class="button" data-target="#project">
             <i class="fa-solid fa-tarp"></i>
             <span class="button_text">Project</span>
         </div>
-        <div class="button">
+        <div class="button" data-target="#contact">
             <i class="fa-solid fa-id-card"></i>
             <span class="button_text">Contact</span>
         </div>
@@ -38,5 +39,61 @@
         <a target="_blank" href="https://github.com"><i class="fa-brands fa-square-github"></i></a>
         <a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></i></a>
     </div>
+
+    <!--pages-->
+    <!--About page-->
+    <section class="page" id="about">
+        <div class="page-header">
+            <div class="page-title">
+                <div class="page-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="page-body">
+                <h3 class="page-title">About content</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--resume page-->
+    <section class="page" id="resume">
+        <div class="page-header">
+            <div class="page-title">
+                <div class="page-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="page-body">
+                <h3 class="page-title">Resume content</h3>
+            </div>
+        </div>
+    </section>
+    <!--project page-->
+    <section class="page" id="project">
+        <div class="page-header">
+            <div class="page-title">
+                <div class="page-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="page-body">
+                <h3 class="page-title">Project content</h3>
+            </div>
+       </div>
+    </section>
+    <!--contact page-->
+    <section class="page" id="contact">
+        <div class="page-header">
+            <div class="page-title">
+                <div class="page-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="page-body">
+                <h3 class="page-title">Contact me</h3>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
 </body>
 </html>
